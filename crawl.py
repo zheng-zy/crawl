@@ -27,7 +27,7 @@ proxy_list = [
     {'http': '61.185.219.126:3128'},
 ]
 
-file_path = "G:\\work\\Workspaces\\pythonwork\\crawl\\test.txt"
+file_path = "G:\\work\\github\\crawl\\test.txt"
 
 # f = open(file_path, "r")
 # lines = f.readlines()
@@ -74,7 +74,7 @@ def crawler():
             if len(context):
                 print "Status [%s] - path: %s" % (response.code, path)
             response.close()
-            time.sleep(1)
+            # time.sleep(1)
         except urllib2.HTTPError as e:
             print e.code, path
             pass
